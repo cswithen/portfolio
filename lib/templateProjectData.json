@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "name": "project 1",
+      "tagline": "cardigan mafia",
+      "description": "Banjo next level air plant, cornhole seitan squid single-origin coffee",
+      "projectLink": "#",
+      "technologies": ["Mocha", "Chai", "Matcha"],
+      "images": [
+        "projectOne-image-1.jpg",
+        "projectOne-image-2.jpg",
+        "projectOne-image-3.jpg"
+      ]
+    },
+    {
+      "name": "project 2",
+      "tagline": "farm to table",
+      "description": "Craft beer neutra godard ethical cardigan umami chicharrones cliche.",
+      "projectLink": "#",
+      "technologies": ["Banana", "Apple", "Passion Fruit"],
+      "images": [
+        "projectTwo-image-1.jpg",
+        "projectTwo-image-2.jpg",
+        "projectTwo-image-3.jpg"
+      ]
+    }
+  ]
+}
