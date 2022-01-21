@@ -1,0 +1,35 @@
+.heroContainer {
+  position: relative;
+}
+
+.canvas {
+  width: 100vw - 0vw;
+  height: 100vh;
+  background-color: #232526;
+}
+
+.heroText {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 1.1;
+  font-size: 3em;
+  white-space: nowrap;
+  color: antiquewhite;
+}
+
+.nameHighlight {
+  font-weight: 600;
+  /* text gradient */
+  background: #d9593d;
+  background-color: #d9593d;
+  background-image: linear-gradient(45deg, #d9593d, #f2af5c);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
