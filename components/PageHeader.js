@@ -1,12 +1,16 @@
 import React from "react";
 
+//styles
+import styles from "../styles/PageHeader.module.css";
+
 const Header = () => {
   return (
     <div>
       <ul>
-        <li>Navigation</li>
-        <li>Bar</li>
-        <li>Setup</li>
+        <li>Home</li>
+        <li>About</li>
+        <li>Projects</li>
+        <li>Contact</li>
       </ul>
     </div>
   );
