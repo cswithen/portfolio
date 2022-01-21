@@ -3,11 +3,13 @@ import styles from "../styles/Home.module.css";
 
 //components
 import Layout from "../components/_Layout";
+import ProjectGrid from "../components/ProjectGrid";
 
 export default function Home() {
   return (
     <Layout>
-      <div className={styles.container}></div>
+      <ProjectGrid />
+      <div>some content here</div>
     </Layout>
   );
 }
