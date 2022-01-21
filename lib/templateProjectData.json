@@ -24,5 +24,47 @@
         "projectTwo-image-3.jpg"
       ]
     }
+  ],
+  "about": {
+    "description": "Mumblecore retro etsy hexagon, poutine biodiesel keffiyeh everyday carry cloud bread.",
+    "skills": [
+      {
+        "name": "Narwhal",
+        "tagline": "Succulents authentic edison bulb",
+        "fa-name": "fa-user"
+      }
+    ],
+    "tools": [
+      {
+        "type": "Front-end",
+        "name": "Javascript",
+        "additional": "es6+"
+      },
+      {
+        "type": "Back-end",
+        "name": "PostgreSQL"
+      },
+      {
+        "type": "Back-end",
+        "name": "NodeJS"
+      }
+    ]
+  },
+  "socials": [
+    {
+      "name": "gitHub",
+      "fa-name": "fa-gitHub",
+      "link": "https://github.com/cswithen"
+    },
+    {
+      "name": "linkedIn",
+      "fa-name": "fa-linkedin",
+      "link": "https://www.linkedin.com/in/codyswithenbank/"
+    },
+    {
+      "name": "instagram",
+      "fa-name": "fa-instagram",
+      "link": "https://www.instagram.com/c_swithen/"
+    }
   ]
 }
