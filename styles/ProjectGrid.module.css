@@ -1,2 +1,13 @@
-.container {
+.container h1 {
+  text-align: center;
+  margin-top: 72px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  gap: 8px;
 }

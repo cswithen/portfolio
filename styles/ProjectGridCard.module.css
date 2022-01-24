@@ -1,3 +1,22 @@
 .cardContainer {
-  border: #232526 solid;
+  padding: 8px 8px 0 8px;
+  z-index: 1 !important;
+}
+
+.cardContainer span {
+  overflow: visible !important;
+}
+
+.cardContainer span img {
+  transition: all 0.5s;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transform: perspective(1px) translateZ(0);
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+
+.cardContainer span img:hover {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+  filter: grayscale(00%);
 }
