@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "name": "project 1",
+      "name": "projectOne",
       "tagline": "cardigan mafia",
       "description": "Banjo next level air plant, cornhole seitan squid single-origin coffee",
       "projectLink": "#",
@@ -13,15 +13,35 @@
       ]
     },
     {
-      "name": "project 2",
+      "name": "projectTwo",
+      "tagline": "farm to table",
+      "description": "Craft beer neutra godard ethical cardigan umami chicharrones cliche.",
+      "projectLink": "#",
+      "technologies": ["Banana", "Apple", "Passion Fruit"],
+      "images": ["projectTwo-image-1.jpg"]
+    },
+    {
+      "name": "projectThree",
       "tagline": "farm to table",
       "description": "Craft beer neutra godard ethical cardigan umami chicharrones cliche.",
       "projectLink": "#",
       "technologies": ["Banana", "Apple", "Passion Fruit"],
       "images": [
-        "projectTwo-image-1.jpg",
-        "projectTwo-image-2.jpg",
-        "projectTwo-image-3.jpg"
+        "projectThree-image-1.jpg",
+        "projectThree-image-2.jpg",
+        "projectThree-image-3.jpg"
+      ]
+    },
+    {
+      "name": "projectFour",
+      "tagline": "farm to table",
+      "description": "Craft beer neutra godard ethical cardigan umami chicharrones cliche.",
+      "projectLink": "#",
+      "technologies": ["Banana", "Apple", "Passion Fruit"],
+      "images": [
+        "projectFour-image-1.jpg",
+        "projectFour-image-2.jpg",
+        "projectFour-image-3.jpg"
       ]
     }
   ],
@@ -32,6 +52,16 @@
         "name": "Narwhal",
         "tagline": "Succulents authentic edison bulb",
         "fa-name": "fa-user"
+      },
+      {
+        "name": "Kombucha",
+        "tagline": "Mumblecore retro etsy hexagon, poutine biodiesel keffiyeh everyday carry cloud bread.",
+        "fa-name": "fa-mail"
+      },
+      {
+        "name": "DIY",
+        "tagline": "Single-origin coffee fam ramps blue bottle.",
+        "fa-name": "fa-test"
       }
     ],
     "tools": [
