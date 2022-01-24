@@ -1,0 +1,34 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #232526;
+  color: #f2ecce;
+  background-clip: padding-box;
+  border-top: solid transparent;
+  padding: 8px 24px 16px;
+  width: 100%;
+  min-height: 6vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transition: all 0.7s ease;
+  border-top: 5px solid;
+  border-image: linear-gradient(45deg, #d9593d, #f2af5c, #6fa8bf, #30588c) 1;
+  z-index: 98;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation div {
+  margin: 8px 0px 0 32px;
+}
+
+.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+}

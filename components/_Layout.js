@@ -19,6 +19,7 @@ const Layout = (props) => {
       </Head>
       <div className={styles.container}>
         <Header />
+        <div className={styles.navbuffer} />
         {props.children}
         <Footer />
       </div>
