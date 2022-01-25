@@ -11,7 +11,7 @@ import styles from "../styles/Layout.module.css";
 
 const Layout = (props) => {
   return (
-    <div>
+    <div className={styles.layoutContainer}>
       <Hero />
       <Head>
         <title>Cody Swithenbank | web developer</title>
@@ -21,8 +21,8 @@ const Layout = (props) => {
         <Header />
         <div className={styles.navbuffer} />
         {props.children}
-        <Footer />
       </div>
+      <Footer socials={props.data.socials} />
     </div>
   );
 };
