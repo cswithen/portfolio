@@ -11,8 +11,8 @@ export const CarouselItem = ({ image, width }) => {
     <div className={styles.carouselItem}>
       <Image
         src={`/${image}`}
-        width={540}
-        height={360}
+        width={540 * 2}
+        height={360 * 2}
         alt={`${image} picture`}
       />
     </div>
