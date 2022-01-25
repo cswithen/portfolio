@@ -11,7 +11,7 @@ import data from "../lib/templateProjectData.json";
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout data={data}>
       <ProjectGrid projects={data.projects} />
       <About about={data.about} />
     </Layout>
