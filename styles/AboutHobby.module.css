@@ -1,0 +1,18 @@
+.hobbyContainer {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.leftAlign {
+  justify-content: flex-start;
+}
+
+.rightAlign {
+  justify-content: flex-end;
+}
+
+.carousel {
+  width: 810px;
+  padding: 10px;
+}
