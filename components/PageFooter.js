@@ -1,9 +1,19 @@
 import React from "react";
 
-const Footer = () => {
+//styles
+import styles from "../styles/Footer.module.css";
+
+const Footer = ({ socials }) => {
   return (
-    <div>
-      <p>This will be the footer</p>
+    <div className={styles.footerContainer}>
+      <div className={styles.socialContainer}>
+        {socials.map((social) => (
+          <div key={social.name} className={styles.socialCard}>
+            <a href={social.link}>{social.name}</a>
+          </div>
+        ))}
+      </div>
+      <div className={styles.signature}>cody swithenbank</div>
     </div>
   );
 };
