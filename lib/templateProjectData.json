@@ -78,6 +78,26 @@
         "type": "Back-end",
         "name": "NodeJS"
       }
+    ],
+    "hobbies": [
+      {
+        "name": "Yoga",
+        "description": "yoga",
+        "images": ["hobbyYoga-image-1.jpg", "hobbyYoga-image-2.jpg"]
+      },
+      {
+        "name": "Art",
+        "description": "digital and acrylic",
+        "images": ["hobbyArt-image-1.jpg"]
+      },
+      {
+        "name": "Photography",
+        "description": "across the world",
+        "images": [
+          "hobbyPhotography-image-1.jpg",
+          "hobbyPhotography-image-2.jpg"
+        ]
+      }
     ]
   },
   "socials": [
@@ -92,7 +112,7 @@
       "link": "https://www.linkedin.com/in/codyswithenbank/"
     },
     {
-      "name": "instagram",
+      "name": "Instagram",
       "fa-name": "fa-instagram",
       "link": "https://www.instagram.com/c_swithen/"
     }
