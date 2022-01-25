@@ -1,0 +1,15 @@
+.aboutTitle {
+  text-align: center;
+}
+
+.skillContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.descriptionContainer {
+  display: flex;
+  justify-content: center;
+}

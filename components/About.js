@@ -2,27 +2,34 @@ import React from "react";
 
 //components
 import AboutSkillCard from "./AboutSkillsCard";
+import Image from "next/image";
+
+//styles
+import styles from "../styles/About.module.css";
+import AboutHobby from "./AboutHobby";
 
 const About = ({ about }) => {
   return (
     <div>
-      <h1>About</h1>
-      <div>{about.description}</div>
+      <h1 className={styles.aboutTitle}>About</h1>
       {/* render Skill Cards */}
-      <h2>Skills</h2>
-      {about.skills.map((skill) => (
-        <AboutSkillCard skill={skill} key={skill.name} />
-      ))}
-      {/* render Tools */}
-      <h2>Tools</h2>
-      <p>
-        {about.tools.map((tool) => (
-          <span key={tool.name}>
-            {tool.name}
-            {tool.additional ? ` ${tool.additional}` : ""},{" "}
-          </span>
+      <div className={styles.skillContainer}>
+        {about.skills.map((skill) => (
+          <AboutSkillCard skill={skill} key={skill.name} />
         ))}
-      </p>
+      </div>
+      <div className={styles.descriptionContainer}>
+        <div>{about.description}</div>
+        <Image
+          src={"/profilePicture.jpg"}
+          width={2304 / 3}
+          height={1536 / 3}
+          alt="profile picture"
+        />
+      </div>
+      {/* render Hobbies */}
+      <h2>Hobbies</h2>
+      <AboutHobby hobbies={about.hobbies} />
     </div>
   );
 };
