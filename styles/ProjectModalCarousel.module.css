@@ -1,5 +1,7 @@
 .carousel {
   overflow: hidden;
+  position: relative;
+  height: 100%;
 }
 
 .inner {
@@ -14,11 +16,17 @@
 }
 
 .indicators {
-  display: flex;
+  display: none;
+  /* display: flex; */
   width: 100%;
   justify-content: space-between;
+  height: 15%;
+  top: 60%;
   position: absolute;
-  top: 50%;
+}
+
+.carousel:hover .indicators {
+  display: flex;
 }
 
 .indicators > button {
