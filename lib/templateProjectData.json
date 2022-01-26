@@ -5,7 +5,9 @@
       "tagline": "cardigan mafia",
       "description": "Banjo next level air plant, cornhole seitan squid single-origin coffee",
       "projectLink": "#",
+      "gitHub": "#",
       "technologies": ["Mocha", "Chai", "Matcha"],
+      "coverImage": "projectOne-cover.jpg",
       "images": [
         "projectOne-image-1.jpg",
         "projectOne-image-2.jpg",
@@ -18,6 +20,7 @@
       "description": "Craft beer neutra godard ethical cardigan umami chicharrones cliche.",
       "projectLink": "#",
       "technologies": ["Banana", "Apple", "Passion Fruit"],
+      "coverImage": "projectTwo-cover.jpg",
       "images": ["projectTwo-image-1.jpg"]
     },
     {
@@ -26,6 +29,7 @@
       "description": "Craft beer neutra godard ethical cardigan umami chicharrones cliche.",
       "projectLink": "#",
       "technologies": ["Banana", "Apple", "Passion Fruit"],
+      "coverImage": "projectThree-cover.jpg",
       "images": [
         "projectThree-image-1.jpg",
         "projectThree-image-2.jpg",
@@ -38,6 +42,7 @@
       "description": "Craft beer neutra godard ethical cardigan umami chicharrones cliche.",
       "projectLink": "#",
       "technologies": ["Banana", "Apple", "Passion Fruit"],
+      "coverImage": "projectFour-cover.jpg",
       "images": [
         "projectFour-image-1.jpg",
         "projectFour-image-2.jpg",
@@ -51,17 +56,20 @@
       {
         "name": "Narwhal",
         "tagline": "Succulents authentic edison bulb",
-        "fa-name": "fa-user"
+        "fa-name": "fa-user",
+        "animation": "hexOne"
       },
       {
         "name": "Kombucha",
         "tagline": "Mumblecore retro etsy hexagon, poutine biodiesel keffiyeh everyday carry cloud bread.",
-        "fa-name": "fa-mail"
+        "fa-name": "fa-mail",
+        "animation": "hexTwo"
       },
       {
         "name": "DIY",
         "tagline": "Single-origin coffee fam ramps blue bottle.",
-        "fa-name": "fa-test"
+        "fa-name": "fa-test",
+        "animation": "hexThree"
       }
     ],
     "tools": [
@@ -92,7 +100,7 @@
       },
       {
         "name": "Photography",
-        "description": "across the world",
+        "description": "across the world test",
         "images": [
           "hobbyPhotography-image-1.jpg",
           "hobbyPhotography-image-2.jpg"
@@ -103,17 +111,17 @@
   "socials": [
     {
       "name": "gitHub",
-      "fa-name": "fa-gitHub",
+      "faName": "faGithub",
       "link": "https://github.com/cswithen"
     },
     {
       "name": "linkedIn",
-      "fa-name": "fa-linkedin",
+      "faName": "faLinkedinIn",
       "link": "https://www.linkedin.com/in/codyswithenbank/"
     },
     {
       "name": "Instagram",
-      "fa-name": "fa-instagram",
+      "faName": "faInstagram",
       "link": "https://www.instagram.com/c_swithen/"
     }
   ]
