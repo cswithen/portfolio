@@ -2,6 +2,18 @@
   display: flex;
   width: 100%;
   align-items: flex-start;
+  margin-top: 4vh;
+}
+
+.hobbyTitle {
+  font-size: 2.5em;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.hobbyText {
+  text-align: justify;
+  font-size: 20px;
 }
 
 .leftAlign {
@@ -12,7 +24,11 @@
   justify-content: flex-end;
 }
 
+.rightAlign > .hobbyText > .hobbyTitle {
+  text-align: end;
+}
+
 .carousel {
-  width: 810px;
+  width: 607.5px;
   padding: 10px;
 }
