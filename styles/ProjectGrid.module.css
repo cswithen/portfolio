@@ -1,6 +1,7 @@
 .container h1 {
   text-align: center;
-  margin-top: 72px;
+  margin-top: 10vh;
+  font-size: 3em;
 }
 
 .grid {
@@ -10,4 +11,6 @@
   align-items: center;
   align-content: flex-start;
   gap: 8px;
+  max-width: 1300px;
+  margin: auto;
 }

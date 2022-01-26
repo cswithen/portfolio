@@ -9,7 +9,8 @@ const ProjectGridCard = ({ project, modalShow }) => {
     <div onClick={modalShow}>
       <div className={styles.cardContainer}>
         <Image
-          src={`/${project.images[0]}`}
+          className={styles.image}
+          src={`/${project.coverImage}`}
           width={540 / 1.5}
           height={360 / 1.5}
           alt={`${project.name} title picture`}
