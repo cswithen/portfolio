@@ -26,12 +26,23 @@ const Header = () => {
 
   return (
     <header className={navbarClasses.join(" ")}>
-      <nav className={styles.navigation}>
-        <div>Home</div>
-        <div>About</div>
-        <div>Projects</div>
-        <div>Contact</div>
-      </nav>
+      <div className={styles.navContent}>
+        <div></div>
+        <nav className={styles.navigation}>
+          <div>
+            <a href="#home">Home</a>
+          </div>
+          <div>
+            <a href="#projects">Projects</a>
+          </div>
+          <div>
+            <a href="#about">About</a>
+          </div>
+          <div>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+      </div>
     </header>
   );
 };
