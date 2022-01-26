@@ -4,4 +4,87 @@
   flex-direction: column;
   text-align: center;
   flex-wrap: wrap;
+  align-items: center;
+}
+
+.hexagon {
+  position: relative;
+  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+  background-color: aqua;
+  background-image: linear-gradient(
+    90deg,
+    #d9593d,
+    #f2af5c,
+    #6fa8bf,
+    #30588c,
+    #d9593d
+  );
+  background-size: 300%;
+  background-repeat: repeat;
+  width: 150px;
+  height: calc(150px * 1.1547);
+}
+
+.skillCard:hover > .hexagon.hexOne {
+  animation: hexOne 3s ease;
+  animation-iteration-count: infinite;
+}
+
+.skillCard:hover > .hexagon.hexTwo {
+  animation: hexTwo 3s ease;
+  animation-iteration-count: infinite;
+}
+
+.skillCard:hover > .hexagon.hexThree {
+  animation: hexThree 3s ease;
+  animation-iteration-count: infinite;
+}
+
+.faIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+  background-color: #f2ecce;
+  width: 100px;
+  height: calc(100px * 1.1547);
+  line-height: 100px;
+  font-size: 36px;
+}
+
+@keyframes hexOne {
+  0% {
+    background-position: 0;
+  }
+  50% {
+    background-position: 150%;
+  }
+  100% {
+    background-position: 300%;
+  }
+}
+
+@keyframes hexTwo {
+  0% {
+    background-position: 50%;
+  }
+  50% {
+    background-position: 200%;
+  }
+  100% {
+    background-position: 350%;
+  }
+}
+
+@keyframes hexThree {
+  0% {
+    background-position: 100%;
+  }
+  50% {
+    background-position: 250%;
+  }
+  100% {
+    background-position: 400%;
+  }
 }
