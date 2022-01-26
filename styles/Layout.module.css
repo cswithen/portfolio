@@ -1,8 +1,12 @@
 .container {
-  padding: 0 24px;
+  padding: 0 64px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
 }
 
 .navbuffer {
-  min-height: 64px;
+  min-height: 6vh;
 }
