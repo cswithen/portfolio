@@ -10,21 +10,68 @@
   width: 100%;
   min-height: 6vh;
   box-sizing: border-box;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+
   transition: all 0.7s ease;
   border-top: 5px solid;
   border-image: linear-gradient(45deg, #d9593d, #f2af5c, #6fa8bf, #30588c) 1;
   z-index: 98;
 }
 
+.navContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  font-size: 20px;
+}
+
 .navigation {
   display: flex;
+  max-width: 1300px;
 }
 
 .navigation div {
   margin: 8px 0px 0 32px;
+  padding: 8px;
+  position: relative;
+}
+
+.navigation div:after,
+.navigation div:before {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 0px solid transparent;
+  width: 0%;
+  height: 0%;
+  transition: all 0.3s ease;
+}
+
+.navigation div:after {
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+}
+
+.navigation div:before {
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+  border-right: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+
+.navigation div:hover::before,
+.navigation div:hover::after {
+  width: 10px;
+  height: 10px;
+  border-color: #d9593d;
 }
 
 .scrolled {
