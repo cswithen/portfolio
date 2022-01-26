@@ -18,8 +18,8 @@ const Layout = (props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.container}>
-        <Header />
         <div className={styles.navbuffer} />
+        <Header />
         {props.children}
       </div>
       <Footer socials={props.data.socials} />

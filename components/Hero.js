@@ -6,6 +6,7 @@ import styles from "../styles/Hero.module.css";
 const Hero = () => {
   return (
     <div className={styles.heroContainer}>
+      <a name="home" />
       <div className={styles.heroText}>
         Hello, my name is{" "}
         <span className={styles.nameHighlight}>Cody Swithenbank</span>. <br />
