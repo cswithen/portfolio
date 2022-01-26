@@ -1,17 +1,57 @@
 .footerContainer {
-  background-color: #232526;
+  background-color: #1a1b1d;
   color: #f2ecce;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 .socialContainer {
   display: flex;
   justify-content: center;
+  font-size: 32px;
 }
 
 .socialCard {
   margin: 16px;
+  text-align: center;
+  line-height: 64px;
+  background-color: #232526;
+  height: 64px;
+  width: 64px;
+  transition: all 1s;
+}
+
+.socialCard:hover {
+  background-image: linear-gradient(
+    -90deg,
+    #d9593d,
+    #f2af5c,
+    #6fa8bf,
+    #30588c,
+    #d9593d
+  );
+  background-size: 300%;
+  background-repeat: repeat;
+  color: #232526;
+  animation: social 3s;
+  animation-iteration-count: infinite;
 }
 
 .signature {
   text-align: center;
+}
+
+@keyframes social {
+  0% {
+    background-position: 0;
+  }
+  50% {
+    background-position: 150%;
+  }
+  100% {
+    background-position: 300%;
+  }
 }
