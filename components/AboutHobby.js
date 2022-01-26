@@ -7,6 +7,8 @@ import Carousel, { CarouselItem } from "./ProjectModalCarousel";
 import styles from "../styles/AboutHobby.module.css";
 
 const AboutHobby = ({ hobbies }) => {
+  const colors = ["#d9593d", "#f2af5c", "#6fa8bf", "#30588c"];
+
   return (
     <div>
       {hobbies.map((hobby, index) => {
@@ -25,17 +27,28 @@ const AboutHobby = ({ hobbies }) => {
                     : null}
                 </Carousel>
               </div>
-              <div>
-                <h3>{hobby.name}</h3>
+              <div className={styles.hobbyText}>
+                <h3 className={styles.hobbyTitle}>{hobby.name}</h3>
+                <hr
+                  className={styles.break}
+                  style={{ borderTop: `4px solid ${colors[index % 4]}` }}
+                ></hr>
                 <p>{hobby.description}</p>
               </div>
             </div>
           );
         } else {
           return (
-            <div className={`${styles.hobbyContainer} ${styles.rightAlign}`}>
-              <div key={hobby.name}>
-                <h3>{hobby.name}</h3>
+            <div
+              className={`${styles.hobbyContainer} ${styles.rightAlign}`}
+              key={hobby.name}
+            >
+              <div className={styles.hobbyText}>
+                <h3 className={styles.hobbyTitle}>{hobby.name}</h3>
+                <hr
+                  className={styles.break}
+                  style={{ borderTop: `4px solid ${colors[index % 4]}` }}
+                ></hr>
                 <p>{hobby.description}</p>
               </div>
               <div className={styles.carousel}>
