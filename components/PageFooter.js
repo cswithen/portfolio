@@ -29,7 +29,7 @@ const Footer = ({ socials }) => {
           );
         })}
       </div>
-      <div className={styles.signature}>cody swithenbank</div>
+      <div className={styles.signature}>CODY SWITHENBANK ©2022</div>
     </div>
   );
 };
