@@ -1,5 +1,12 @@
+.aboutContainer {
+  max-width: 1300px;
+  margin: auto;
+}
+
 .aboutTitle {
   text-align: center;
+  margin-top: 10vh;
+  font-size: 3em;
 }
 
 .skillContainer {
@@ -10,6 +17,33 @@
 }
 
 .descriptionContainer {
+  margin-top: 15vh;
   display: flex;
   justify-content: center;
+}
+
+.profileDescription {
+  padding: 16px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.name {
+  text-align: end;
+  font-size: 2em;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.hobbyTitle {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 500;
+  margin: auto;
+  margin-top: 8vh;
+  border-top: 5px solid;
+  width: 50%;
+  border-image: linear-gradient(-45deg, #d9593d, #f2af5c, #6fa8bf, #30588c) 1;
 }
