@@ -12,6 +12,7 @@
   transition: all 0.3s ease-in-out;
   pointer-events: none;
   z-index: 99;
+  font-size: 20px;
 }
 
 .modal.show {
@@ -37,12 +38,70 @@
 
 .modalFooter {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalTagline {
+  margin-bottom: 0;
+  margin-top: 8px;
 }
 
 .modalTitle {
   margin: 0;
+  font-size: 1.5em;
+  text-transform: uppercase;
 }
 
 .modalBody {
   padding: 10px;
+}
+
+.technologies {
+  padding: 0 0 0 16px;
+  color: rgba(0, 0, 0, 0.75);
+  margin-top: 0;
+  border-left: 5px solid;
+  border-color: #d9593d;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.projectLink {
+  padding: 8px 24px;
+  background-color: #30588c;
+  color: #f2ecce;
+}
+
+.gitHub {
+  margin: auto 8px;
+  padding: 0px 16px;
+  font-size: 24px;
+}
+
+.modalButton {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  align-self: flex-end;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.modalButton:hover {
+  background-color: #232526;
+  color: #f2ecce;
 }

@@ -3,6 +3,10 @@ import styles from "../styles/ProjectModal.module.css";
 
 // components
 import Carousel, { CarouselItem } from "./ProjectModalCarousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+//font awesome icons
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const ProjectModal = ({ show, onClose, modalData }) => {
   const closeModal = (e) => {
@@ -32,9 +36,33 @@ const ProjectModal = ({ show, onClose, modalData }) => {
             : null}
         </Carousel>
         <div className={styles.modalFooter}>
-          <h4>{modalData.name}</h4>
-          <p>{modalData.tagline}</p>
+          <p className={styles.modalTagline}>{modalData.tagline}</p>
+          <h3 className={styles.modalTitle}>{modalData.name}</h3>
           <p>{modalData.description}</p>
+          <p className={styles.technologies}>
+            Technologies: {modalData.technologies.join(", ")}.
+          </p>
+          <div className={styles.modalButtons}>
+            <div className={styles.links}>
+              {modalData.projectLink ? (
+                <a className={styles.projectLink} href={modalData.projectLink}>
+                  Visit Site
+                </a>
+              ) : (
+                <div />
+              )}
+              {modalData.gitHub ? (
+                <a className={styles.gitHub} href={modalData.gitHub}>
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+              ) : (
+                <div />
+              )}
+            </div>
+            <button onClick={onClose} className={styles.modalButton}>
+              X
+            </button>
+          </div>
         </div>
       </div>
     </div>
