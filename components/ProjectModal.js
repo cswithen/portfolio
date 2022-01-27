@@ -40,7 +40,8 @@ const ProjectModal = ({ show, onClose, modalData }) => {
           <h3 className={styles.modalTitle}>{modalData.name}</h3>
           <p>{modalData.description}</p>
           <p className={styles.technologies}>
-            Technologies: {modalData.technologies.join(", ")}.
+            Technologies:{" "}
+            {modalData.technologies ? modalData.technologies.join(", ") : ""}.
           </p>
           <div className={styles.modalButtons}>
             <div className={styles.links}>
