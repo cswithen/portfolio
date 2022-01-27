@@ -2,6 +2,7 @@ import React from "react";
 
 //components
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import HeroPts from "./HeroPts";
 
 //font awesome icons
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -13,6 +14,7 @@ const Hero = () => {
   return (
     <div className={styles.heroContainer}>
       <a name="home" />
+      <HeroPts name="pts" background="transparent" style={{ height: "100%" }} />
       <div className={styles.heroText}>
         Hello, my name is{" "}
         <span className={styles.nameHighlight}>Cody Swithenbank</span>. <br />
@@ -23,7 +25,6 @@ const Hero = () => {
           <FontAwesomeIcon icon={faArrowRight} className={styles.arrow} />
         </a>
       </div>
-      <div className={styles.canvas}></div>
     </div>
   );
 };
