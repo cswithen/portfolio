@@ -22,7 +22,7 @@
 
 .modalContent {
   width: 1080px;
-  background-color: antiquewhite;
+  background-color: #fffafa;
   transform: translateY(-200px);
   transition: all 0.3s ease-in-out;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -79,7 +79,7 @@
 .projectLink {
   padding: 8px 24px;
   background-color: #30588c;
-  color: #f2ecce;
+  color: #fffafa;
 }
 
 .gitHub {
@@ -103,5 +103,5 @@
 
 .modalButton:hover {
   background-color: #232526;
-  color: #f2ecce;
+  color: #fffafa;
 }
