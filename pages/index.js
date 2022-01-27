@@ -6,7 +6,7 @@ import ProjectGrid from "../components/ProjectGrid";
 import About from "../components/About";
 
 //data
-import data from "../lib/templateProjectData.json";
+import data from "../lib/websiteData.json";
 
 export default function Home() {
   return (
