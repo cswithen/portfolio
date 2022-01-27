@@ -38,9 +38,9 @@ export class HeroPts extends PtsCanvas {
       // set base brightness
       let brightness = 0.09;
 
-      if (distance < 300) {
-        brightness += 0.035;
-      } else if (distance > 300) {
+      if (distance < 5000) {
+        brightness += 0.045;
+      } else if (distance > 5000) {
         brightness -= 0.01;
       }
 
