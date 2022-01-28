@@ -30,7 +30,10 @@ const ProjectGrid = ({ projects }) => {
       <ProjectModal
         show={show}
         modalData={modalData}
-        onClose={() => setShow(false)}
+        onClose={() => {
+          setShow(false);
+          setModalData({});
+        }}
       />
     </div>
   );

@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 //font awesome icons
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faVideo } from "@fortawesome/free-solid-svg-icons";
 
 const ProjectModal = ({ show, onClose, modalData }) => {
   const closeModal = (e) => {
@@ -38,7 +39,7 @@ const ProjectModal = ({ show, onClose, modalData }) => {
         <div className={styles.modalFooter}>
           <p className={styles.modalTagline}>{modalData.tagline}</p>
           <h3 className={styles.modalTitle}>{modalData.name}</h3>
-          <p>{modalData.description}</p>
+          <p className={styles.modalText}>{modalData.description}</p>
           <p className={styles.technologies}>
             Technologies:{" "}
             {modalData.technologies ? modalData.technologies.join(", ") : ""}.
@@ -46,15 +47,37 @@ const ProjectModal = ({ show, onClose, modalData }) => {
           <div className={styles.modalButtons}>
             <div className={styles.links}>
               {modalData.projectLink ? (
-                <a className={styles.projectLink} href={modalData.projectLink}>
+                <a
+                  className={styles.projectLink}
+                  href={modalData.projectLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Visit Site
                 </a>
               ) : (
                 <div />
               )}
               {modalData.gitHub ? (
-                <a className={styles.gitHub} href={modalData.gitHub}>
+                <a
+                  className={styles.gitHub}
+                  href={modalData.gitHub}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FontAwesomeIcon icon={faGithub} />
+                </a>
+              ) : (
+                <div />
+              )}
+              {modalData.video ? (
+                <a
+                  className={styles.video}
+                  href={modalData.video}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faVideo} />
                 </a>
               ) : (
                 <div />
