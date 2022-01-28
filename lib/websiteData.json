@@ -1,109 +1,147 @@
 {
   "projects": [
     {
-      "name": "projectOne",
-      "tagline": "cardigan mafia",
-      "description": "Banjo next level air plant, cornhole seitan squid single-origin coffee",
-      "projectLink": "#",
-      "gitHub": "#",
-      "technologies": ["Mocha", "Chai", "Matcha"],
-      "coverImage": "projectOne-cover.jpg",
+      "name": "Chack",
+      "tagline": "event planning and organization | developer",
+      "description": "An event management application that aims to ease the organization of group events by creating a central platform with multiple tools, the primary tool as of the end of the project was a check splitting feature where users could use the Google Vision API to parse through dinner checks and different members from the event could claim their items and pay the individual who put their card down",
+      "gitHub": "https://github.com/Chack-App",
+      "technologies": [
+        "React Native",
+        "GraphQL",
+        "Postgres",
+        "Google Vision API",
+        "JWT",
+        "Apollo Client"
+      ],
+      "video": "https://www.youtube.com/watch?v=g9nEQ5d91ko",
+      "coverImage": "chack-cover.jpg",
       "images": [
-        "projectOne-image-1.jpg",
-        "projectOne-image-2.jpg",
-        "projectOne-image-3.jpg"
+        "chack-image-1.jpg",
+        "chack-image-2.jpg",
+        "chack-image-3.jpg",
+        "chack-image-4.jpg",
+        "chack-image-5.jpg"
       ]
     },
     {
-      "name": "projectTwo",
-      "tagline": "farm to table",
-      "description": "Craft beer neutra godard ethical cardigan umami chicharrones cliche.",
-      "projectLink": "#",
-      "technologies": ["Banana", "Apple", "Passion Fruit"],
-      "coverImage": "projectTwo-cover.jpg",
-      "images": ["projectTwo-image-1.jpg"]
-    },
-    {
-      "name": "projectThree",
-      "tagline": "farm to table",
-      "description": "Craft beer neutra godard ethical cardigan umami chicharrones cliche.",
-      "projectLink": "#",
-      "technologies": ["Banana", "Apple", "Passion Fruit"],
-      "coverImage": "projectThree-cover.jpg",
+      "name": "KickCoin",
+      "tagline": "accountable kickstarter | sole developer",
+      "description": "A Kickstarter clone that uses Ethereum and smart contracts to maintain accountability on kickstarter (campaign) owners, by allowing supporters to vote on proposed expenditures.",
+      "projectLink": "http://kick-coin.vercel.app/",
+      "gitHub": "https://github.com/cswithen/ethereum-kickstarter",
+      "technologies": [
+        "Next.js",
+        "React",
+        "Solidity",
+        "Web3",
+        "Infura.io",
+        "Semantic UI"
+      ],
+      "coverImage": "kickcoin-cover.jpg",
       "images": [
-        "projectThree-image-1.jpg",
-        "projectThree-image-2.jpg",
-        "projectThree-image-3.jpg"
+        "kickcoin-image-1.jpg",
+        "kickcoin-image-2.jpg",
+        "kickcoin-image-3.jpg",
+        "kickcoin-image-4.jpg",
+        "kickcoin-image-5.jpg"
       ]
     },
     {
-      "name": "projectFour",
-      "tagline": "farm to table",
-      "description": "Craft beer neutra godard ethical cardigan umami chicharrones cliche.",
-      "projectLink": "#",
-      "technologies": ["Banana", "Apple", "Passion Fruit"],
-      "coverImage": "projectFour-cover.jpg",
+      "name": "west-march",
+      "tagline": "tabletop campaign assistant | sole developer",
+      "description": "A tool to assist in west-march style tabletop RPG games by providing a central location to show player wants / activities / and completed goals. This application uses the Notion API to use Notion as the back-end so game masters can plan and organize resources effectively",
+      "projectLink": "https://cswithen-west-march.vercel.app/",
+      "gitHub": "https://github.com/cswithen/west-march",
+      "technologies": ["Next.js", "React", "Notion API"],
+      "coverImage": "westmarch-cover.jpg",
       "images": [
-        "projectFour-image-1.jpg",
-        "projectFour-image-2.jpg",
-        "projectFour-image-3.jpg"
+        "westmarch-image-1.jpg",
+        "westmarch-image-2.jpg",
+        "westmarch-image-3.jpg",
+        "westmarch-image-4.jpg",
+        "westmarch-image-5.jpg",
+        "westmarch-image-6.jpg"
+      ]
+    },
+    {
+      "name": "Ebb and Flow",
+      "tagline": "yoga sequence platform | sole developer",
+      "description": "A website where yoga instructors can go to gain information about different yoga poses as well as plan out sequences and share these playlists to the community at large. One can manage their own workouts and also edit them on the fly using a drag and drop feature which will update the database",
+      "technologies": [
+        "React",
+        "Passport.js",
+        "PostgreSQL",
+        "Express",
+        "Axios"
+      ],
+      "video": "https://www.youtube.com/watch?v=uvfA-_X7nbs",
+      "gitHub": "https://github.com/cswithen/EbbandFlow",
+      "coverImage": "ebbandflow-cover.jpg",
+      "images": [
+        "ebbandflow-image-1.jpg",
+        "ebbandflow-image-2.jpg",
+        "ebbandflow-image-2.jpg",
+        "ebbandflow-image-3.jpg"
       ]
     }
   ],
   "about": {
-    "description": "Mumblecore retro etsy hexagon, poutine biodiesel keffiyeh everyday carry cloud bread.",
+    "description": "I am a web developer currently living in the Central Coast of California, I have a passion for making tools that help others in their daily lives, through automation, organization and communication. I went to Washington State University and graduated with a degree in Chemical Engineering, spent about 5 years in the environmental consulting world and then decided to make the leap to software engineering and web development through a software engineering bootcamp. This decision has reignited my passion for learning and teaching others and strive to bridge my creative and technical passion through creating useful and beautiful websites",
     "skills": [
       {
-        "name": "Narwhal",
-        "tagline": "Succulents authentic edison bulb",
-        "fa-name": "fa-user",
+        "name": "Creativity",
+        "tagline": "There isn't one way to cook an egg, I love solving a problem in a unique and ready for anything way.",
+        "fa-name": "faPalette",
         "animation": "hexOne"
       },
       {
-        "name": "Kombucha",
-        "tagline": "Mumblecore retro etsy hexagon, poutine biodiesel keffiyeh everyday carry cloud bread.",
-        "fa-name": "fa-mail",
+        "name": "Collaboration",
+        "tagline": "Working with others to achieve a goal is sometimes complicated but always rewarding. I reach for teams that I can both learn and teach in.",
+        "fa-name": "faProjectDiagram",
         "animation": "hexTwo"
       },
       {
-        "name": "DIY",
-        "tagline": "Single-origin coffee fam ramps blue bottle.",
-        "fa-name": "fa-test",
+        "name": "Patience",
+        "tagline": "Not only the ability to wait, but the ability to keep a good attitude while waiting. I find the most growth in myself when solving a problem that takes the most time.",
+        "fa-name": "faHourglassHalf",
         "animation": "hexThree"
       }
     ],
-    "tools": [
-      {
-        "type": "Front-end",
-        "name": "Javascript",
-        "additional": "es6+"
-      },
-      {
-        "type": "Back-end",
-        "name": "PostgreSQL"
-      },
-      {
-        "type": "Back-end",
-        "name": "NodeJS"
-      }
+    "languages": ["Javascript", "HTML", "CSS", "Solidity"],
+    "backEnd": ["PostgreSQL", "NodeJS", "APIs"],
+    "frontEnd": [
+      "React",
+      "Responsive Design",
+      "Testing and Debugging",
+      "Next.js"
     ],
+    "design": ["Adobe Creative Cloud", "Figma", "Wireframing", "Prototyping"],
     "hobbies": [
       {
         "name": "Yoga",
-        "description": "yoga",
+        "description": "My yoga journey began while visiting a long-time friend in Seattle; as soon as he arrived, he was informed that he would be attending hot yoga everyday for the next week. I quickly found the power of breath and deep grounding that the practice gives. Yoga became a passion and is now an integral part of his life, I attended my first 200-hour teacher training at SLO Yoga Center in September of 2019. I am currently teaching about one class a week at The Center in San luis Obispo",
         "images": ["hobbyYoga-image-1.jpg", "hobbyYoga-image-2.jpg"]
       },
       {
         "name": "Art",
-        "description": "digital and acrylic",
-        "images": ["hobbyArt-image-1.jpg"]
+        "description": "The expression of art has always been a pillar in my life, I have always loved exploring new mediums and learning new techniques. I started learning digital art because of my fascination with geometric designs and inability to draw a straight line with pencil and paper. Throughout the years I have adopted many software platforms under my creative umbrella including; Photoshop, Illustrator, After Effects, Premiere, Adobe XD, and more recently Figma. As well as some dabbling with more physical mediums like acryllic painting, and photography. Art for me is an inspiration that I can use in any facet of my life, including front-end coding",
+        "images": [
+          "art-imageOne.jpg",
+          "art-imageTwo.jpg",
+          "art-imageThree.jpg",
+          "art-imageFour.jpg",
+          "art-imageFive.jpg",
+          "art-imageSix.jpg"
+        ]
       },
       {
-        "name": "Photography",
-        "description": "across the world test",
+        "name": "Cooking",
+        "description": "Cooking is another bridge of technical and creative forces that can bring friends and family closer through a shared experience. While I do not claim to be any good a cheffing, I do love the chance to cook for the individuals I care about in my life. Honing this life skill has been another avenue for me to constantly learn, practice and literally taste the efficacy of my in the hobby.",
         "images": [
-          "hobbyPhotography-image-1.jpg",
-          "hobbyPhotography-image-2.jpg"
+          "food-imageOne.jpg",
+          "food-imageTwo.jpg",
+          "food-imageThree.jpg",
+          "food-imageFour.jpg"
         ]
       }
     ]
