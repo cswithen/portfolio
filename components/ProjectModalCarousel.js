@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 //components
 import Image from "next/image";
@@ -21,6 +21,10 @@ export const CarouselItem = ({ image, width }) => {
 
 const Carousel = ({ children }) => {
   const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    setActiveIndex(0);
+  }, [children]);
 
   const updateIndex = (newIndex) => {
     if (newIndex < 0) {
