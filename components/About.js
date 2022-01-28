@@ -24,12 +24,15 @@ const About = ({ about }) => {
           <h2 className={styles.name}>Cody Swithenbank</h2>
           <p>{about.description}</p>
         </div>
-        <Image
-          src={"/profilePicture.jpg"}
-          width={2304 / 3}
-          height={1536 / 3}
-          alt="profile picture"
-        />
+        <div>
+          <Image
+            src={"/profilePicture.jpg"}
+            width={2304 / 3}
+            height={1536 / 3}
+            alt="profile picture"
+            className={styles.profilePicture}
+          />
+        </div>
       </div>
       {/* render Hobbies */}
       <h2 className={styles.hobbyTitle}>when I am not coding</h2>
