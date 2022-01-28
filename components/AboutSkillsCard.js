@@ -4,12 +4,18 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 //font awesome icons
-import { faUser } from "@fortawesome/free-solid-svg-icons";
+import {
+  faPalette,
+  faProjectDiagram,
+  faHourglassHalf,
+} from "@fortawesome/free-solid-svg-icons";
 
 //styles
 import styles from "../styles/AboutSkillCard.module.css";
 
 const AboutSkillCard = ({ skill, index }) => {
+  const icons = [faPalette, faProjectDiagram, faHourglassHalf];
+
   return (
     <div className={styles.skillCard}>
       <div
@@ -17,7 +23,7 @@ const AboutSkillCard = ({ skill, index }) => {
         style={{ backgroundPosition: `${index * 50}%` }}
       >
         <div className={styles.faIcon}>
-          <FontAwesomeIcon icon={faUser} />
+          <FontAwesomeIcon icon={icons[index]} />
         </div>
       </div>
       <h3>{skill.name}</h3>

@@ -6,6 +6,7 @@
   flex-wrap: wrap;
   align-items: center;
   font-size: 18px;
+  padding: 24px;
 }
 
 .hexagon {
@@ -50,7 +51,7 @@
   background-color: #fffafa;
   width: 100px;
   height: calc(100px * 1.1547);
-  line-height: 100px;
+  line-height: 115px;
   font-size: 36px;
 }
 
