@@ -21,3 +21,9 @@
   transform: scale(1.1);
   filter: grayscale(00%);
 }
+
+@media screen and (max-width: 970px) and (-webkit-min-device-pixel-ratio: 2) {
+  .cardContainer span img.image {
+    filter: none;
+  }
+}

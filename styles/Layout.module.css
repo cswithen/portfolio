@@ -10,3 +10,10 @@
 .navbuffer {
   min-height: 6vh;
 }
+
+@media screen and (max-width: 970px) and (-webkit-min-device-pixel-ratio: 2) {
+  .layoutContainer {
+    margin: 0 auto;
+    width: 100%;
+  }
+}

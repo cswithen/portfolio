@@ -49,3 +49,13 @@
 .button:hover .arrow {
   transform: rotate(90deg);
 }
+
+@media screen and (max-width: 970px) and (-webkit-min-device-pixel-ratio: 2) {
+  .heroText {
+    white-space: normal;
+  }
+
+  .button {
+    padding: 8px 16px;
+  }
+}
