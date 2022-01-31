@@ -91,7 +91,7 @@
   }
 }
 
-@media screen and (max-width: 970px) and (-webkit-min-device-pixel-ratio: 2) {
+@media (max-width: 970px) {
   .skillCard {
     width: 100%;
   }
