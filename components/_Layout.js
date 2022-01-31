@@ -28,6 +28,15 @@ const Layout = (props) => {
           sizes="16x16"
           href="/favicon-16x16.png"
         />
+        <meta name="title" content="Cody Swithenbank | web developer" />
+        <meta
+          name="description"
+          content="Cody Swithenbank personal website for displaying projects"
+        />
+        <link
+          rel="image_src"
+          href="https://cody-swithenbank.vercel.app/_next/image?url=%2FprofilePicture.jpg&w=828&q=75"
+        />
       </Head>
       <div className={styles.container}>
         <div className={styles.navbuffer} />
