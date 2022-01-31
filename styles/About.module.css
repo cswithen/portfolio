@@ -52,3 +52,28 @@
   width: 50%;
   border-image: linear-gradient(-45deg, #d9593d, #f2af5c, #6fa8bf, #30588c) 1;
 }
+
+@media screen and (max-width: 970px) and (-webkit-min-device-pixel-ratio: 2) {
+  .aboutContainer {
+    margin: 0;
+  }
+
+  .skillContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .descriptionContainer {
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+
+  .name {
+    text-align: center;
+    white-space: normal;
+  }
+}

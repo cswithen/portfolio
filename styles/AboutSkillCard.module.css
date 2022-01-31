@@ -90,3 +90,9 @@
     background-position: 400%;
   }
 }
+
+@media screen and (max-width: 970px) and (-webkit-min-device-pixel-ratio: 2) {
+  .skillCard {
+    width: 100%;
+  }
+}
