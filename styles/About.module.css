@@ -53,7 +53,7 @@
   border-image: linear-gradient(-45deg, #d9593d, #f2af5c, #6fa8bf, #30588c) 1;
 }
 
-@media screen and (max-width: 970px) and (-webkit-min-device-pixel-ratio: 2) {
+@media (max-width: 970px) {
   .aboutContainer {
     margin: 0;
   }
@@ -75,5 +75,35 @@
   .name {
     text-align: center;
     white-space: normal;
+  }
+
+  .hobbyTitle {
+    margin: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .descriptionContainer {
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    font-size: 16px;
+  }
+
+  .name {
+    text-align: center;
+    white-space: normal;
+  }
+
+  .profileDescription {
+    font-size: 16px;
+  }
+
+  .hobbyTitle {
+    margin: auto;
+    margin-top: 42px;
+    width: 100%;
   }
 }

@@ -11,9 +11,15 @@
   min-height: 6vh;
 }
 
-@media screen and (max-width: 970px) and (-webkit-min-device-pixel-ratio: 2) {
+@media (max-width: 970px) {
   .layoutContainer {
     margin: 0 auto;
     width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    padding: 16px;
   }
 }
