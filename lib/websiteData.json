@@ -107,13 +107,21 @@
         "animation": "hexThree"
       }
     ],
-    "languages": ["Javascript", "HTML", "CSS", "Solidity"],
+    "languages": ["Javascript", "HTML", "CSS", "Solidity", "goLang"],
     "backEnd": ["PostgreSQL", "NodeJS", "APIs"],
     "frontEnd": [
-      "React",
       "Responsive Design",
       "Testing and Debugging",
-      "Next.js"
+      "React",
+      "Redux",
+      "React Router",
+      "Material-UI",
+      "GraphQL",
+      "Apollo GraphQL",
+      "Sass",
+      "Bootstrap",
+      "Next.js",
+      "Axios"
     ],
     "design": ["Adobe Creative Cloud", "Figma", "Wireframing", "Prototyping"],
     "hobbies": [
