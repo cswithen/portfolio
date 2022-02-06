@@ -43,7 +43,7 @@ const About = ({ about }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Let's <span className={styles.meHighlight}>Meet!</span>
+          Let&apos;s <span className={styles.meHighlight}>Meet!</span>
         </a>
       </h3>
     </div>
