@@ -53,6 +53,61 @@
   border-image: linear-gradient(-45deg, #d9593d, #f2af5c, #6fa8bf, #30588c) 1;
 }
 
+.meetMe {
+  width: 50%;
+  padding: 8px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
+  position: relative;
+  margin: 36px auto 72px;
+}
+
+.meetMe::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background-image: linear-gradient(-45deg, #d9593d, #f2af5c);
+  transform: scaleX(0);
+
+  transition: transform 0.3s;
+}
+
+.meetMe::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background-image: linear-gradient(-45deg, #d9593d, #f2af5c);
+  transform: scaleX(0);
+
+  transition: transform 0.3s;
+}
+
+.meetMe:hover::before,
+.meetMe:hover::after {
+  transform: scaleX(1);
+}
+
+.meHighlight {
+  font-weight: 600;
+  /* text gradient */
+  background: #d9593d;
+  background-color: #d9593d;
+  background-image: linear-gradient(45deg, #d9593d, #f2af5c);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @media (max-width: 970px) {
   .aboutContainer {
     margin: 0;

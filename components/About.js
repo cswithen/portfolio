@@ -37,6 +37,15 @@ const About = ({ about }) => {
       {/* render Hobbies */}
       <h2 className={styles.hobbyTitle}>when I am not coding</h2>
       <AboutHobby hobbies={about.hobbies} />
+      <h3 className={styles.meetMe}>
+        <a
+          href="https://calendly.com/cody-swithenbank/30min"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Let&apos;s <span className={styles.meHighlight}>Meet!</span>
+        </a>
+      </h3>
     </div>
   );
 };
