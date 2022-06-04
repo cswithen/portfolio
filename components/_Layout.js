@@ -31,7 +31,7 @@ const Layout = (props) => {
         <meta name="title" content="Cody Swithenbank | web developer" />
         <meta
           name="description"
-          content="Cody Swithenbank personal website for displaying projects"
+          content="Cody Swithenbank is a Software Engineer, Yoga Instructor and Teaching Fellow located in California. Find Cody's recent projects, passions, socials and contact information here"
         />
         <link
           rel="image_src"
