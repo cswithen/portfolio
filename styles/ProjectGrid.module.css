@@ -6,7 +6,6 @@
 
 .grid {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   align-content: flex-start;
@@ -16,4 +15,7 @@
 }
 
 @media (max-width: 970px) {
+  .grid {
+    flex-wrap: wrap;
+  }
 }
