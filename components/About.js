@@ -12,7 +12,7 @@ const About = ({ about }) => {
   return (
     <div className={styles.aboutContainer}>
       <a name="about" />
-      <h1 className={styles.aboutTitle}>About</h1>
+      <h2 className={styles.aboutTitle}>About</h2>
       {/* render Skill Cards */}
       <div className={styles.skillContainer}>
         {about.skills.map((skill, index) => (
@@ -21,23 +21,23 @@ const About = ({ about }) => {
       </div>
       <div className={styles.descriptionContainer}>
         <div className={styles.profileDescription}>
-          <h2 className={styles.name}>Cody Swithenbank</h2>
+          <h3 className={styles.name}>Cody Swithenbank</h3>
           <p>{about.description}</p>
         </div>
-        <div>
+        <div className={styles.profilePictureContainer}>
           <Image
             src={"/profilePicture.jpg"}
-            width={2304 / 3}
-            height={1536 / 3}
+            width={2736 / 4}
+            height={3648 / 4}
             alt="profile picture"
             className={styles.profilePicture}
           />
         </div>
       </div>
       {/* render Hobbies */}
-      <h2 className={styles.hobbyTitle}>when I am not coding</h2>
+      {/* <h3 className={styles.hobbyTitle}>when I am not coding</h3> */}
       <AboutHobby hobbies={about.hobbies} />
-      <h3 className={styles.meetMe}>
+      {/* <h3 className={styles.meetMe}>
         <a
           href="https://calendly.com/cody-swithenbank/30min"
           target="_blank"
@@ -45,7 +45,7 @@ const About = ({ about }) => {
         >
           Let&apos;s <span className={styles.meHighlight}>Meet!</span>
         </a>
-      </h3>
+      </h3> */}
     </div>
   );
 };

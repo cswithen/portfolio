@@ -4,67 +4,30 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 //styles
-import styles from "../styles/ProjectModalCarousel.module.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
-export const CarouselItem = ({ image, width }) => {
+export const CarouselItem = ({ image, width, height }) => {
   return (
-    <div className={styles.carouselItem}>
+    <div>
       <Image
         src={`/${image}`}
-        width={540 * 2}
-        height={360 * 2}
+        width={width ? width : 540 * 2}
+        height={height ? height : 360 * 2}
         alt={`${image} picture`}
       />
     </div>
   );
 };
 
-const Carousel = ({ children }) => {
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  useEffect(() => {
-    setActiveIndex(0);
-  }, [children]);
-
-  const updateIndex = (newIndex) => {
-    if (newIndex < 0) {
-      newIndex = React.Children.count(children) - 1;
-    } else if (newIndex >= React.Children.count(children)) {
-      newIndex = 0;
-    }
-
-    setActiveIndex(newIndex);
-  };
-
+const WrapperCarousel = ({ children }) => {
   return (
-    <div className={styles.carousel}>
-      <div
-        className={styles.inner}
-        style={{ transform: `translateX(-${activeIndex * 100}%)` }}
-      >
-        {React.Children.map(children, (child, index) => {
-          return React.cloneElement(child, { width: "100%" });
-        })}
-      </div>
-      <div className={styles.indicators}>
-        <button
-          onClick={() => {
-            updateIndex(activeIndex - 1);
-          }}
-        >
-          &#10094;
-        </button>
-        <button
-          className={styles.right}
-          onClick={() => {
-            updateIndex(activeIndex + 1);
-          }}
-        >
-          &#10095;
-        </button>
-      </div>
-    </div>
+    <Carousel emulateTouch infiniteLoop showStatus={false} showThumbs={false}>
+      {React.Children.map(children, (child, index) => {
+        return React.cloneElement(child);
+      })}
+    </Carousel>
   );
 };
 
-export default Carousel;
+export default WrapperCarousel;

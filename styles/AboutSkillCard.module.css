@@ -27,19 +27,20 @@
   height: calc(150px * 1.1547);
 }
 
-.skillCard:hover > .hexagon.hexOne {
-  animation: hexOne 3s ease;
-  animation-iteration-count: infinite;
+.hexagon.hexOne {
+  animation: hexOne 3s ease infinite paused; /* Initially paused */
 }
 
-.skillCard:hover > .hexagon.hexTwo {
-  animation: hexTwo 3s ease;
-  animation-iteration-count: infinite;
+.hexagon.hexTwo {
+  animation: hexTwo 3s ease infinite paused; /* Initially paused */
 }
 
-.skillCard:hover > .hexagon.hexThree {
-  animation: hexThree 3s ease;
-  animation-iteration-count: infinite;
+.hexagon.hexThree {
+  animation: hexThree 3s ease infinite paused; /* Initially paused */
+}
+
+.hexagon.running {
+  animation-play-state: running !important; /* Start running on hover */
 }
 
 .faIcon {

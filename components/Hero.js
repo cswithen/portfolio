@@ -15,7 +15,7 @@ const Hero = () => {
     <div className={styles.heroContainer}>
       <a name="home" />
       <HeroPts name="pts" background="transparent" style={{ height: "100%" }} />
-      <div className={styles.heroText}>
+      <h1 className={styles.heroText}>
         Hello, my name is{" "}
         <span className={styles.nameHighlight}>Cody Swithenbank</span>. <br />
         And I am a full-stack web developer. <br />
@@ -24,7 +24,7 @@ const Hero = () => {
           Check my work{" "}
           <FontAwesomeIcon icon={faArrowRight} className={styles.arrow} />
         </a>
-      </div>
+      </h1>
     </div>
   );
 };

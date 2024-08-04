@@ -22,7 +22,12 @@ const AboutHobby = ({ hobbies }) => {
                 <Carousel>
                   {hobby.images
                     ? hobby.images.map((image, index) => (
-                        <CarouselItem image={image} key={`${image}-${index}`} />
+                        <CarouselItem
+                          image={image}
+                          key={`${image}-${index}`}
+                          width={hobby.name === "Yoga" ? 2736 / 2 : undefined}
+                          height={hobby.name === "Yoga" ? 3648 / 2 : undefined}
+                        />
                       ))
                     : null}
                 </Carousel>
@@ -55,7 +60,12 @@ const AboutHobby = ({ hobbies }) => {
                 <Carousel>
                   {hobby.images
                     ? hobby.images.map((image, index) => (
-                        <CarouselItem image={image} key={`${image}-${index}`} />
+                        <CarouselItem
+                          image={image}
+                          key={`${image}-${index}`}
+                          width={hobby.name === "Yoga" ? 2736 / 2 : undefined}
+                          height={hobby.name === "Yoga" ? 3648 / 2 : undefined}
+                        />
                       ))
                     : null}
                 </Carousel>

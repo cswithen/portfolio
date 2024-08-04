@@ -3,6 +3,7 @@
   width: 100%;
   align-items: flex-start;
   margin-bottom: 4vh;
+  gap: 6px;
 }
 
 .hobbyTitle {
@@ -19,6 +20,7 @@
 
 .leftAlign {
   justify-content: flex-start;
+  align-items: center;
 }
 
 .rightAlign {
@@ -33,6 +35,10 @@
   width: 607.5px;
   padding: 10px;
   flex: 1.2 1 0px;
+}
+
+.leftAlign > .carousel {
+  margin-top: 50px;
 }
 
 @media (max-width: 970px) {
@@ -60,6 +66,10 @@
 
   .hobbyText {
     margin-bottom: 42px;
+  }
+
+  .carousel {
+    margin-top: 0;
   }
 }
 

@@ -29,6 +29,10 @@
   flex: 1 1 0px;
 }
 
+.profilePictureContainer {
+  padding-top: 24px;
+}
+
 .profilePicture {
   flex: 1 1 0px;
 }
@@ -47,8 +51,8 @@
   font-size: 2.5em;
   font-weight: 500;
   margin: auto;
-  margin-top: 8vh;
-  border-top: 5px solid;
+  margin-top: 4vh;
+  border-bottom: 5px solid;
   width: 50%;
   border-image: linear-gradient(-45deg, #d9593d, #f2af5c, #6fa8bf, #30588c) 1;
 }

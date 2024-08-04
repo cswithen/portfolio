@@ -29,7 +29,9 @@ const Footer = ({ socials }) => {
           );
         })}
       </div>
-      <div className={styles.signature}>CODY SWITHENBANK ©2022</div>
+      <div className={styles.signature}>
+        CODY SWITHENBANK ©{new Date().getFullYear()}
+      </div>
     </div>
   );
 };

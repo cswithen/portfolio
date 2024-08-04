@@ -14,7 +14,7 @@ const ProjectGrid = ({ projects }) => {
   return (
     <div className={styles.container}>
       <a name="projects" />
-      <h1>Projects</h1>
+      <h2>Projects</h2>
       <div className={styles.grid}>
         {projects.map((project) => (
           <ProjectGridCard

@@ -1,9 +1,28 @@
 {
   "projects": [
     {
+      "name": "Scalable Commerce Design System",
+      "tagline": "Efficient Design and Development | Lead Developer",
+      "description": "The Scalable Commerce Design System is a comprehensive framework designed to streamline the design and development process. By creating a unified set of components and guidelines, this system has reduced page development time by 80% and accelerated the time-to-market for new features by 70%. It emphasizes accessibility, consistency, and collaboration between design and development teams.",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Storybook",
+        "SCSS",
+        "Jest",
+        "CI/CD"
+      ],
+      "coverImage": "designsystem-cover.png",
+      "images": [
+        "designsystem-image-1.png",
+        "designsystem-image-2.png",
+        "designsystem-image-3.png"
+      ]
+    },
+    {
       "name": "Chack",
-      "tagline": "event planning and organization | developer",
-      "description": "An event management application that aims to ease the organization of group events by creating a central platform with multiple tools. The primary tool of the project was a check splitting feature where users could use the Google Vision API to parse through dinner checks. Different members from the event could claim their items and pay the individual who put their card down",
+      "tagline": "Event Planning and Organization | Developer",
+      "description": "Chack is an event management application designed to simplify the organization of group events. The platform offers multiple tools, with a primary focus on a check-splitting feature that utilizes the Google Vision API to parse dinner checks. Event participants can claim their items and reimburse the person who covered the bill.",
       "gitHub": "https://github.com/Chack-App",
       "technologies": [
         "React Native",
@@ -25,9 +44,8 @@
     },
     {
       "name": "KickCoin",
-      "tagline": "accountable kickstarter | sole developer",
-      "description": "A Kickstarter clone that uses Ethereum and smart contracts to maintain accountability on kickstarter (campaign) owners, by allowing supporters to vote on proposed expenditures.",
-      "projectLink": "http://kick-coin.vercel.app/",
+      "tagline": "Accountable Kickstarter | Sole Developer",
+      "description": "KickCoin is a Kickstarter clone that leverages Ethereum and smart contracts to maintain accountability among campaign owners. Supporters can vote on proposed expenditures, ensuring transparency and trust in the use of funds.",
       "gitHub": "https://github.com/cswithen/ethereum-kickstarter",
       "technologies": [
         "Next.js",
@@ -47,9 +65,9 @@
       ]
     },
     {
-      "name": "west-march",
-      "tagline": "tabletop campaign assistant | sole developer",
-      "description": "A tool to assist in west-march style tabletop RPG games by providing a central location to show player wants / activities / and completed goals. This application uses the Notion API to use Notion as the back-end so game masters can plan and organize resources effectively",
+      "name": "West March",
+      "tagline": "Tabletop Campaign Assistant | Sole Developer",
+      "description": "West March is a tool designed to assist in West-March style tabletop RPG games. It provides a central location for players to track wants, activities, and completed goals. The application uses the Notion API for backend support, allowing game masters to efficiently plan and organize resources.",
       "projectLink": "https://cswithen-west-march.vercel.app/",
       "gitHub": "https://github.com/cswithen/west-march",
       "technologies": ["Next.js", "React", "Notion API"],
@@ -62,52 +80,31 @@
         "westmarch-image-5.jpg",
         "westmarch-image-6.jpg"
       ]
-    },
-    {
-      "name": "Ebb and Flow",
-      "tagline": "yoga sequence platform | sole developer",
-      "description": "A website where yoga instructors can go to gain information about different yoga poses as well as plan out sequences and share these playlists to the community at large. One can manage their own workouts and also edit them on the fly using a drag and drop feature which will update the database",
-      "technologies": [
-        "React",
-        "Passport.js",
-        "PostgreSQL",
-        "Express",
-        "Axios"
-      ],
-      "video": "https://www.youtube.com/watch?v=uvfA-_X7nbs",
-      "gitHub": "https://github.com/cswithen/EbbandFlow",
-      "coverImage": "ebbandflow-cover.jpg",
-      "images": [
-        "ebbandflow-image-1.jpg",
-        "ebbandflow-image-2.jpg",
-        "ebbandflow-image-2.jpg",
-        "ebbandflow-image-3.jpg"
-      ]
     }
   ],
   "about": {
-    "description": "I am a web developer currently living in the Central Coast of California. I have a passion for making tools that help others in their daily lives, through automation, organization and communication. I attended Washington State University and graduated with a degree in Chemical Engineering, spent about 5 years in the environmental consulting world and then decided to make the leap to software engineering and web development through a software engineering bootcamp. This decision has reignited my passion for learning and teaching others and strive to bridge my creative and technical passion through creating useful and beautiful websites",
+    "description": "I am Cody Swithenbank, a Senior Fullstack Web Developer based on the Central Coast of California. With over three years of experience, I specialize in creating tools that enhance daily life through automation, organization, and communication. After graduating with a degree in Chemical Engineering, working in environmental engineering for over five years, and transitioning to software engineering via a bootcamp, I discovered a passion for merging creative and technical skills. At Scalable Commerce, I lead cross-team collaborations, mentor junior developers, and establish coding standards, fostering continuous learning and innovation. My approach to development is rooted in a deep understanding of user experience, ensuring the products I create are both functional and elegant. In my spare time, I enjoy digital art, yoga, and cooking, which help me stay balanced and creative.",
     "skills": [
       {
-        "name": "Creativity",
-        "tagline": "There isn't one way to cook an egg, I love solving a problem in a unique and ready for anything way.",
-        "fa-name": "faPalette",
+        "name": "Resilience",
+        "tagline": "My ability to adapt and recover quickly from setbacks ensures consistent progress and growth, even in challenging situations.",
+        "fa-name": "faHourglassHalf",
         "animation": "hexOne"
       },
       {
-        "name": "Collaboration",
-        "tagline": "Working with others to achieve a goal is sometimes complicated but always rewarding. I reach for teams that I can both learn and teach in.",
-        "fa-name": "faProjectDiagram",
+        "name": "Creativity",
+        "tagline": "There isn't one way to cook an egg; I love solving problems in unique and adaptable ways.",
+        "fa-name": "faPalette",
         "animation": "hexTwo"
       },
       {
-        "name": "Patience",
-        "tagline": "Not only the ability to wait, but the ability to keep a good attitude while waiting. I find the most growth in myself when solving a problem that takes the most time.",
-        "fa-name": "faHourglassHalf",
+        "name": "Collaboration",
+        "tagline": "Working with others to achieve a goal is sometimes complicated but always rewarding. I thrive in teams where I can both learn and teach.",
+        "fa-name": "faProjectDiagram",
         "animation": "hexThree"
       }
     ],
-    "languages": ["Javascript", "HTML", "CSS", "Solidity", "goLang"],
+    "languages": ["JavaScript", "HTML", "CSS", "Solidity", "Go"],
     "backEnd": ["PostgreSQL", "NodeJS", "APIs"],
     "frontEnd": [
       "Responsive Design",
@@ -126,13 +123,8 @@
     "design": ["Adobe Creative Cloud", "Figma", "Wireframing", "Prototyping"],
     "hobbies": [
       {
-        "name": "Yoga",
-        "description": "My yoga journey began while visiting a long-time friend in Seattle; as soon as I arrived, I was informed that I would be attending hot yoga everyday for the next week. I quickly found the power of breath and deep grounding that the practice gives. Yoga became a passion and is now an integral part of my life. I attended my first 200-hour teacher training at SLO Yoga Center in September of 2019. I am currently teaching one class a week at The Center in San Luis Obispo",
-        "images": ["hobbyYoga-image-1.jpg", "hobbyYoga-image-2.jpg"]
-      },
-      {
         "name": "Art",
-        "description": "The expression of art has been a pillar in my life, as I have always loved exploring new mediums and learning new techniques. I started learning digital art because of my fascination with geometric designs and inability to draw a straight line with pencil and paper. Throughout the years I have adopted many software platforms under my creative umbrella including; Photoshop, Illustrator, After Effects, Premiere, Adobe XD, and more recently Figma. As well as some dabbling with more physical mediums like acryllic painting, and photography. Art for me is an inspiration that I can use in any facet of my life, including front-end coding",
+        "description": "Art has always been a pillar in my life, inspiring me to explore new mediums and techniques. I started learning digital art due to my fascination with geometric designs and my inability to draw straight lines with pencil and paper. Over the years, I've mastered software like Photoshop, Illustrator, After Effects, Premiere, Adobe XD, and more recently Figma. I've also dabbled in physical mediums like acrylic painting and photography. Art inspires my front-end coding and fuels my creativity.",
         "images": [
           "art-imageOne.jpg",
           "art-imageTwo.jpg",
@@ -143,8 +135,13 @@
         ]
       },
       {
+        "name": "Yoga",
+        "description": "My yoga journey began during a visit to a long-time friend in Seattle. During that visit, I was introduced to hot yoga, attending daily sessions for a week. This immersive experience quickly revealed to me the profound benefits of yoga, particularly the power of breath control and grounding techniques. I found that yoga not only improved my physical fitness but also provided a significant boost to my mental clarity and emotional well-being. Yoga has since become a passion and an integral part of my daily routine. In September 2019, I took my commitment to the next level by completing a 200-hour teacher training program at SLO Yoga Center. This intensive training deepened my understanding of yoga philosophy, anatomy, and teaching methodologies, empowering me to share the benefits of yoga with others.",
+        "images": ["hobbyYoga-image-1.jpg", "hobbyYoga-image-2.jpg"]
+      },
+      {
         "name": "Cooking",
-        "description": "Cooking is another bridge of technical and creative forces that can bring friends and family closer through a shared experience. While I do not claim to be any good at cheffing, I do love the chance to cook for the individuals I care about in my life. Honing this life skill has been another avenue for me to constantly learn, practice and literally taste the efficacy of my in the hobby.",
+        "description": "Cooking bridges technical and creative forces, bringing friends and family together through shared experiences. While I don't claim to be a top chef, I love cooking for my loved ones. This hobby allows me to constantly learn, practice, and literally taste the results of my efforts.",
         "images": [
           "food-imageOne.jpg",
           "food-imageTwo.jpg",
@@ -156,19 +153,14 @@
   },
   "socials": [
     {
-      "name": "gitHub",
+      "name": "GitHub",
       "faName": "faGithub",
       "link": "https://github.com/cswithen"
     },
     {
-      "name": "linkedIn",
+      "name": "LinkedIn",
       "faName": "faLinkedinIn",
       "link": "https://www.linkedin.com/in/codyswithenbank/"
-    },
-    {
-      "name": "Instagram",
-      "faName": "faInstagram",
-      "link": "https://www.instagram.com/c_swithen/"
     }
   ]
 }

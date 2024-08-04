@@ -6,7 +6,11 @@ import styles from "../styles/ProjectGridCard.module.css";
 
 const ProjectGridCard = ({ project, modalShow }) => {
   return (
-    <div onClick={modalShow}>
+    <button
+      className={styles.cardButton}
+      onClick={modalShow}
+      aria-label={`Open project details for ${project.name}`}
+    >
       <div className={styles.cardContainer}>
         <Image
           className={styles.image}
@@ -16,7 +20,7 @@ const ProjectGridCard = ({ project, modalShow }) => {
           alt={`${project.name} title picture`}
         />
       </div>
-    </div>
+    </button>
   );
 };
 

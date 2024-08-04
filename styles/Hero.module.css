@@ -16,6 +16,10 @@
   color: #fffafa;
 }
 
+h1.heroText {
+  margin: 0;
+}
+
 .nameHighlight {
   font-weight: 600;
   /* text gradient */

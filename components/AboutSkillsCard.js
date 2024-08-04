@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 //components
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,18 +7,46 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPalette,
   faProjectDiagram,
-  faHourglassHalf,
+  faShieldAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
 //styles
 import styles from "../styles/AboutSkillCard.module.css";
 
 const AboutSkillCard = ({ skill, index }) => {
-  const icons = [faPalette, faProjectDiagram, faHourglassHalf];
+  const icons = [faShieldAlt, faPalette, faProjectDiagram];
+  const hexagonRef = useRef(null);
+
+  useEffect(() => {
+    const hexagon = hexagonRef.current;
+
+    const handleMouseEnter = () => {
+      hexagon.classList.add(styles.running);
+    };
+
+    const handleMouseLeave = () => {
+      hexagon.addEventListener(
+        "animationiteration",
+        () => {
+          hexagon.classList.remove(styles.running);
+        },
+        { once: true }
+      );
+    };
+
+    hexagon.addEventListener("mouseenter", handleMouseEnter);
+    hexagon.addEventListener("mouseleave", handleMouseLeave);
+
+    return () => {
+      hexagon.removeEventListener("mouseenter", handleMouseEnter);
+      hexagon.removeEventListener("mouseleave", handleMouseLeave);
+    };
+  }, []);
 
   return (
     <div className={styles.skillCard}>
       <div
+        ref={hexagonRef}
         className={`${styles.hexagon} ${styles[skill.animation]}`}
         style={{ backgroundPosition: `${index * 50}%` }}
       >
