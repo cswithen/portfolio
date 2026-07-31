@@ -126,16 +126,6 @@ export default function RecipePage({ recipe, knownSlugs }) {
             ))}
           </ul>
 
-          {recipe.cookware.length > 0 && (
-            <>
-              <h2 className={styles.sectionTitle}>Cookware</h2>
-              <ul className={styles.ingredientList}>
-                {recipe.cookware.map((item, index) => (
-                  <li key={`${item.name}-${index}`}>{item.name}</li>
-                ))}
-              </ul>
-            </>
-          )}
         </aside>
 
         <div className={styles.method}>
@@ -146,17 +136,29 @@ export default function RecipePage({ recipe, knownSlugs }) {
                 <h3 className={styles.subsection}>{section.name}</h3>
               )}
               <ol className={styles.steps}>
-                {section.steps.map((step, stepIndex) => (
-                  <li key={stepIndex} className={styles.step}>
-                    {step.map((item, itemIndex) => (
-                      <StepItem
-                        key={itemIndex}
-                        item={item}
-                        knownSlugs={knownSlugs}
-                      />
-                    ))}
-                  </li>
-                ))}
+                {section.blocks.map((block, blockIndex) =>
+                  block.type === "note" ? (
+                    <li key={blockIndex} className={styles.note}>
+                      {block.items.map((item, itemIndex) => (
+                        <StepItem
+                          key={itemIndex}
+                          item={item}
+                          knownSlugs={knownSlugs}
+                        />
+                      ))}
+                    </li>
+                  ) : (
+                    <li key={blockIndex} className={styles.step}>
+                      {block.items.map((item, itemIndex) => (
+                        <StepItem
+                          key={itemIndex}
+                          item={item}
+                          knownSlugs={knownSlugs}
+                        />
+                      ))}
+                    </li>
+                  )
+                )}
               </ol>
             </section>
           ))}

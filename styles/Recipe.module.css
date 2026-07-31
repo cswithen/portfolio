@@ -121,15 +121,48 @@
   font-size: 0.9em;
 }
 
+/* Counter-driven numbering so notes sit between steps without taking a number. */
 .steps {
-  padding-left: 20px;
+  list-style: none;
+  counter-reset: step;
+  padding-left: 0;
   margin: 0;
 }
 
 .step {
+  counter-increment: step;
+  position: relative;
+  padding-left: 40px;
   line-height: 1.85;
   margin-bottom: 20px;
   font-size: 1.05em;
+}
+
+.step::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #30588c;
+  color: #fffafa;
+  font-size: 0.8em;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.note {
+  margin: 0 0 20px 40px;
+  padding: 10px 16px;
+  border-left: 3px solid #f2af5c;
+  background-color: rgba(242, 175, 92, 0.12);
+  font-size: 0.95em;
+  line-height: 1.7;
+  opacity: 0.9;
 }
 
 .ingredient,

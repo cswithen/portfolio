@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -6,19 +6,6 @@ import { getRecipeSummaries } from "../../lib/recipes";
 import styles from "../../styles/Cookbook.module.css";
 
 export default function Cookbook({ recipes }) {
-  const [activeTag, setActiveTag] = useState("all");
-
-  const tags = useMemo(() => {
-    const all = new Set();
-    recipes.forEach((recipe) => recipe.tags.forEach((tag) => all.add(tag)));
-    return ["all", ...Array.from(all).sort()];
-  }, [recipes]);
-
-  const visible =
-    activeTag === "all"
-      ? recipes
-      : recipes.filter((recipe) => recipe.tags.includes(activeTag));
-
   return (
     <div className={styles.page}>
       <Head>
@@ -33,39 +20,15 @@ export default function Cookbook({ recipes }) {
         <Link href="/" className={styles.backLink}>
           &#8592; Back to portfolio
         </Link>
-        <h1 className={styles.title}>Cody&apos;s Cookbook</h1>
-        <p className={styles.subtitle}>
-          {recipes.length} {recipes.length === 1 ? "recipe" : "recipes"},
-          written in{" "}
-          <a href="https://cooklang.org" target="_blank" rel="noreferrer">
-            CookLang
-          </a>
-          .
-        </p>
       </header>
 
-      {tags.length > 1 && (
-        <div className={styles.filters}>
-          {tags.map((tag) => (
-            <button
-              key={tag}
-              type="button"
-              onClick={() => setActiveTag(tag)}
-              className={`${styles.filter} ${
-                activeTag === tag ? styles.filterActive : ""
-              }`}
-            >
-              {tag}
-            </button>
-          ))}
-        </div>
-      )}
-
-      {visible.length === 0 ? (
-        <p className={styles.empty}>No recipes yet. Drop a .cook file in the recipes folder.</p>
+      {recipes.length === 0 ? (
+        <p className={styles.empty}>
+          No recipes yet. Drop a .cook file in the recipes folder.
+        </p>
       ) : (
         <ul className={styles.grid}>
-          {visible.map((recipe) => (
+          {recipes.map((recipe) => (
             <li key={recipe.slug} className={styles.card}>
               <Link
                 href={`/codyscookbook/${recipe.slug}`}
@@ -89,7 +52,6 @@ export default function Cookbook({ recipes }) {
                   <p className={styles.cardMeta}>
                     {[
                       recipe.cuisine,
-                      recipe.servings,
                       recipe.cookTime ? `${recipe.cookTime} cook` : null,
                     ]
                       .filter(Boolean)

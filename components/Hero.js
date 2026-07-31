@@ -21,7 +21,8 @@ const Hero = () => {
       <h1 className={styles.heroText}>
         Hello, my name is{" "}
         <span className={styles.nameHighlight}>Cody Swithenbank</span>. <br />
-        And I am a full-stack developer. A human one. <br />
+        And I am a full-stack developer. <br />
+        A human one. <br />
         <br />
         <a
           href={showProjects ? "#projects" : "#about"}
