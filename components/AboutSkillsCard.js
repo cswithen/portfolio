@@ -6,15 +6,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 //font awesome icons
 import {
   faPalette,
-  faProjectDiagram,
-  faShieldAlt,
+  faDiagramProject,
+  faShieldHalved,
 } from "@fortawesome/free-solid-svg-icons";
 
 //styles
 import styles from "../styles/AboutSkillCard.module.css";
 
+// websiteData.json is the source of truth: each skill's "fa-name" selects its icon.
+const iconsByName = {
+  faShieldHalved,
+  faPalette,
+  faDiagramProject,
+};
+
 const AboutSkillCard = ({ skill, index }) => {
-  const icons = [faShieldAlt, faPalette, faProjectDiagram];
+  const icon = iconsByName[skill["fa-name"]];
   const hexagonRef = useRef(null);
 
   useEffect(() => {
@@ -51,7 +58,7 @@ const AboutSkillCard = ({ skill, index }) => {
         style={{ backgroundPosition: `${index * 50}%` }}
       >
         <div className={styles.faIcon}>
-          <FontAwesomeIcon icon={icons[index]} />
+          {icon ? <FontAwesomeIcon icon={icon} /> : null}
         </div>
       </div>
       <h3>{skill.name}</h3>

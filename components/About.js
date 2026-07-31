@@ -22,7 +22,9 @@ const About = ({ about }) => {
       <div className={styles.descriptionContainer}>
         <div className={styles.profileDescription}>
           <h3 className={styles.name}>Cody Swithenbank</h3>
-          <p>{about.description}</p>
+          {[].concat(about.description).map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
         </div>
         <div className={styles.profilePictureContainer}>
           <Image

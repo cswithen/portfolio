@@ -1,10 +1,19 @@
 import React from "react";
+import Link from "next/link";
 
 //components
 import Carousel, { CarouselItem } from "./ProjectModalCarousel";
 
 //styles
 import styles from "../styles/AboutHobby.module.css";
+
+// Optional per-hobby call to action, driven by websiteData.json.
+const HobbyLink = ({ link }) =>
+  link ? (
+    <Link href={link.href} className={styles.hobbyLink}>
+      {link.label} &#8594;
+    </Link>
+  ) : null;
 
 const AboutHobby = ({ hobbies }) => {
   const colors = ["#d9593d", "#f2af5c", "#6fa8bf", "#30588c"];
@@ -39,6 +48,7 @@ const AboutHobby = ({ hobbies }) => {
                   style={{ borderTop: `4px solid ${colors[index % 4]}` }}
                 ></hr>
                 <p>{hobby.description}</p>
+                <HobbyLink link={hobby.link} />
               </div>
             </div>
           );
@@ -55,6 +65,7 @@ const AboutHobby = ({ hobbies }) => {
                   style={{ borderTop: `4px solid ${colors[index % 4]}` }}
                 ></hr>
                 <p>{hobby.description}</p>
+                <HobbyLink link={hobby.link} />
               </div>
               <div className={styles.carousel}>
                 <Carousel>

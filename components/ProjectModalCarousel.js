@@ -15,6 +15,7 @@ export const CarouselItem = ({ image, width, height }) => {
         width={width ? width : 540 * 2}
         height={height ? height : 360 * 2}
         alt={`${image} picture`}
+        style={{ width: "100%", height: "auto" }}
       />
     </div>
   );

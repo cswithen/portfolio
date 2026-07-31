@@ -1,7 +1,11 @@
 import React, { useEffect } from "react";
+import Link from "next/link";
 
 //styles
 import styles from "../styles/PageHeader.module.css";
+
+//config
+import { showProjects } from "../lib/siteConfig";
 
 const Header = () => {
   const [scrolled, setScrolled] = React.useState(false);
@@ -32,11 +36,16 @@ const Header = () => {
           <div>
             <a href="#home">Home</a>
           </div>
-          <div>
-            <a href="#projects">Projects</a>
-          </div>
+          {showProjects && (
+            <div>
+              <a href="#projects">Projects</a>
+            </div>
+          )}
           <div>
             <a href="#about">About</a>
+          </div>
+          <div>
+            <Link href="/codyscookbook">Cookbook</Link>
           </div>
         </nav>
       </div>

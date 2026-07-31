@@ -83,12 +83,15 @@
     }
   ],
   "about": {
-    "description": "I am Cody Swithenbank, a Senior Fullstack Web Developer based on the Central Coast of California. With over three years of experience, I specialize in creating tools that enhance daily life through automation, organization, and communication. After graduating with a degree in Chemical Engineering, working in environmental engineering for over five years, and transitioning to software engineering via a bootcamp, I discovered a passion for merging creative and technical skills. At Scalable Commerce, I lead cross-team collaborations, mentor junior developers, and establish coding standards, fostering continuous learning and innovation. My approach to development is rooted in a deep understanding of user experience, ensuring the products I create are both functional and elegant. In my spare time, I enjoy digital art, yoga, and cooking, which help me stay balanced and creative.",
+    "description": [
+      "I am Cody Swithenbank, a Senior Fullstack Web Developer based on the Central Coast of California. With over three years of experience, I specialize in creating tools that enhance daily life through automation, organization, and communication. After graduating with a degree in Chemical Engineering, working in environmental engineering for over five years, and transitioning to software engineering via a bootcamp, I discovered a passion for merging creative and technical skills.",
+      "At Scalable Commerce, I lead cross-team collaborations, mentor junior developers, and establish coding standards, fostering continuous learning and innovation. My approach to development is rooted in a deep understanding of user experience, ensuring the products I create are both functional and elegant. In my spare time, I enjoy digital art, yoga, and cooking, which help me stay balanced and creative."
+    ],
     "skills": [
       {
         "name": "Resilience",
         "tagline": "My ability to adapt and recover quickly from setbacks ensures consistent progress and growth, even in challenging situations.",
-        "fa-name": "faHourglassHalf",
+        "fa-name": "faShieldHalved",
         "animation": "hexOne"
       },
       {
@@ -100,7 +103,7 @@
       {
         "name": "Collaboration",
         "tagline": "Working with others to achieve a goal is sometimes complicated but always rewarding. I thrive in teams where I can both learn and teach.",
-        "fa-name": "faProjectDiagram",
+        "fa-name": "faDiagramProject",
         "animation": "hexThree"
       }
     ],
@@ -142,6 +145,10 @@
       {
         "name": "Cooking",
         "description": "Cooking bridges technical and creative forces, bringing friends and family together through shared experiences. While I don't claim to be a top chef, I love cooking for my loved ones. This hobby allows me to constantly learn, practice, and literally taste the results of my efforts.",
+        "link": {
+          "href": "/codyscookbook",
+          "label": "Browse my cookbook"
+        },
         "images": [
           "food-imageOne.jpg",
           "food-imageTwo.jpg",

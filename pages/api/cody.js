@@ -44,7 +44,7 @@ const projects = data.projects.map((project) => {
 export default function handler(req, res) {
   res.status(200).json({
     name: "Cody Swithenbank",
-    description: data.about.description,
+    description: [].concat(data.about.description).join("\n\n"),
     softSkills: softSkills,
     technicalSkills: technicalSkills,
     links: links,

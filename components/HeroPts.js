@@ -2,8 +2,8 @@ import { Line, Create, Pt } from "pts";
 import { PtsCanvas } from "../lib/TemplateCanvas";
 
 export class HeroPts extends PtsCanvas {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.pts = [];
     this.colors = ["#D9593D", "#F2AF5C", "#6FA8BF", "#30588C"];
     this.opacities = [];

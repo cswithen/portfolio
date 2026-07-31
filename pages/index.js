@@ -7,11 +7,12 @@ import About from "../components/About";
 
 //data
 import data from "../lib/websiteData.json";
+import { showProjects } from "../lib/siteConfig";
 
 export default function Home() {
   return (
     <Layout data={data}>
-      <ProjectGrid projects={data.projects} />
+      {showProjects && <ProjectGrid projects={data.projects} />}
       <About about={data.about} />
     </Layout>
   );
