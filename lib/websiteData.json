@@ -140,7 +140,9 @@
       {
         "name": "Yoga",
         "description": "My yoga journey began during a visit to a long-time friend in Seattle. During that visit, I was introduced to hot yoga, attending daily sessions for a week. This immersive experience quickly revealed to me the profound benefits of yoga, particularly the power of breath control and grounding techniques. I found that yoga not only improved my physical fitness but also provided a significant boost to my mental clarity and emotional well-being. Yoga has since become a passion and an integral part of my daily routine. In September 2019, I took my commitment to the next level by completing a 200-hour teacher training program at SLO Yoga Center. This intensive training deepened my understanding of yoga philosophy, anatomy, and teaching methodologies, empowering me to share the benefits of yoga with others.",
-        "images": ["hobbyYoga-image-1.jpg", "hobbyYoga-image-2.jpg"]
+        "images": ["hobbyYoga-image-1.jpg", "hobbyYoga-image-2.jpg"],
+        "slideRatio": "4 / 5",
+        "slideFocus": "right"
       },
       {
         "name": "Cooking",

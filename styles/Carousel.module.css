@@ -1,0 +1,17 @@
+/*
+ * Every slide in a carousel shares one shape, so the carousel no longer sizes
+ * itself to its tallest image. Per-carousel overrides come from websiteData.json
+ * as inline --slide-ratio / --slide-focus custom properties.
+ */
+.slide {
+  position: relative;
+  width: 100%;
+  aspect-ratio: var(--slide-ratio, 4 / 3);
+  overflow: hidden;
+  background-color: rgba(35, 37, 38, 0.06);
+}
+
+.slideImage {
+  object-fit: cover;
+  object-position: var(--slide-focus, center);
+}

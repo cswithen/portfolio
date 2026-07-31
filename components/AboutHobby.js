@@ -34,8 +34,8 @@ const AboutHobby = ({ hobbies }) => {
                         <CarouselItem
                           image={image}
                           key={`${image}-${index}`}
-                          width={hobby.name === "Yoga" ? 2736 / 2 : undefined}
-                          height={hobby.name === "Yoga" ? 3648 / 2 : undefined}
+                          ratio={hobby.slideRatio}
+                          focus={hobby.slideFocus}
                         />
                       ))
                     : null}
@@ -74,8 +74,8 @@ const AboutHobby = ({ hobbies }) => {
                         <CarouselItem
                           image={image}
                           key={`${image}-${index}`}
-                          width={hobby.name === "Yoga" ? 2736 / 2 : undefined}
-                          height={hobby.name === "Yoga" ? 3648 / 2 : undefined}
+                          ratio={hobby.slideRatio}
+                          focus={hobby.slideFocus}
                         />
                       ))
                     : null}
